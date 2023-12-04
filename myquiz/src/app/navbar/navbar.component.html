@@ -1,0 +1,18 @@
+<div class="grid grid-cols-3 gap-4">
+  <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 h-[calc(100vh-2rem)] w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5">
+    <div class="mb-2 p-4">
+      <h5 class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-gray-900">Menu</h5>
+    </div>
+    <nav class="flex flex-col gap-1 min-w-[240px] p-2 font-sans text-base font-normal text-gray-700">
+      <app-nav-button buttonText="Questions" route="/questions"></app-nav-button>
+      <app-nav-button buttonText="Anserws" route="/answers"></app-nav-button>
+      <app-nav-button buttonText="Level" route="/level"></app-nav-button>
+      <app-nav-button buttonText="Media" route="/media"></app-nav-button>
+      <app-nav-button buttonText="Subject" route="/subject"></app-nav-button>
+    </nav>
+  </div>
+  <div class="col-span-2 p-4">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
