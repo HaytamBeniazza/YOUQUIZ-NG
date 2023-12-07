@@ -1,0 +1,38 @@
+<div class="min-h-screen bg-gray-100 flex">
+  <div class="sidebar min-h-screen w-[3.35rem] overflow-hidden border-r hover:w-56 hover:bg-white hover:shadow-lg">
+    <div class="flex h-screen flex-col justify-between pt-2 pb-6">
+      <div>
+        <div class="w-max flex p-2.5">
+          <img src="../../../assets/images/youquiz.png" class="w-12" alt="">
+        </div>
+        <ul class="mt-6 space-y-2 tracking-wide">
+          <app-nav-button route="/" body='<i class="fa-solid h-5 w-5 fa-house"></i>' buttonTitle="Home"></app-nav-button>
+          <app-nav-button route="/teacher" body='<i class="fa-solid h-5 w-5 fa-chalkboard-user"></i>' buttonTitle="Teacher"></app-nav-button>
+          <app-nav-button route="/student" body='<i class="fa-solid h-5 w-5 fa-person"></i>' buttonTitle="Student"></app-nav-button>
+          <app-nav-button route="/quiz" body='<i class="fa-solid fa-puzzle-piece h-5 w-5"></i>' buttonTitle="Quiz"></app-nav-button>
+          <app-nav-button route="/level" body='<i class="fa-solid fa-chart-simple h-5 w-5"></i>' buttonTitle="Level"></app-nav-button>
+        </ul>
+      </div>
+      <div class="w-max -mb-3">
+        <a href="#" class="group flex items-center space-x-4 rounded-md px-4 py-3 text-gray-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 group-hover:fill-cyan-600" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+          </svg>
+          <span class="group-hover:text-gray-700">Settings</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main class="flex-1 p-4">
+    <div class="flex items-center justify-center min-h-screen bg-indigo-500  bg-fixed bg-cover bg-bottom error-bg"
+	style="background-image: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23f0b608' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23e6d710' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23e7af05' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23e7d808' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d8a408' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23f1e213' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23f0b607' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23e4d506' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23eab822' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23e8da14' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23e8b008' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23edde14' points='943 900 1210 900 971 687'/%3E%3C/svg%3E);">
+
+      <div class="container">
+        <div class="row">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
